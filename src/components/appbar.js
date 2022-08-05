@@ -10,7 +10,7 @@ const Appbar = () => {
       position="fixed"
       sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
       <Toolbar>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        <Typography variant="h6" component="div">
           Sunflowe Project V.0.1.1
         </Typography>
       </Toolbar>

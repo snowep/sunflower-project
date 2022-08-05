@@ -2,12 +2,21 @@
 
 import "./App.css";
 import Webpages from "./page/index";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+
+const darkTheme = createTheme({
+  palette: {
+    mode: "dark"
+  }
+});
 
 function App() {
   return (
-    <div>
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
       <Webpages />
-    </div>
+    </ThemeProvider>
   );
 }
 
